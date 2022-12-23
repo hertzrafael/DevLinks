@@ -34,6 +34,7 @@
 
 body {
     background: var(--url-background) no-repeat top center/cover;
+    height: 100vh;
 }
 
 .container {
@@ -161,4 +162,14 @@ footer {
 
 footer span {
     text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    :root {
+        --url-background: url('../assets/bg-desktop.jpg');
+    }
+
+    .light {
+        --url-background: url('../assets/bg-light-desktop.jpg');
+    }
 }
