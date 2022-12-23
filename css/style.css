@@ -81,6 +81,10 @@ body {
     animation: slide-back 0.4s forwards;
 }
 
+#switch button:hover {
+    outline: 8px solid var(--social-color-hover);
+}
+
 .light #switch button {
     animation: slide-in 0.4s forwards;
 }
