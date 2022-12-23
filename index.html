@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+    <head>
+        <title>DevLinks</title>
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script>
+            function toggleMode() {
+                let htmlElement = document.querySelector('html');
+
+                if(htmlElement.classList.contains('light')) {
+                    htmlElement.classList.remove('light');
+                    document.querySelector('#profile > img').src = './assets/avatar-dark.png';
+                }
+                else {
+                    htmlElement.classList.add('light');
+                    document.querySelector('#profile > img').src = './assets/avatar-light.png';
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <section id="profile">
+                <img src="./assets/avatar-dark.png" width="112" height="112">
+                <span>@maykbrito</span>
+            </section>
+
+            <section id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </section>
+
+            <section id="links">
+                <ul>
+                    <li><a href="#">Inscreva-se no NLW</a></li>
+                    <li><a href="#">Baixe meu e-book</a></li>
+                    <li><a href="#">Veja meu portfólio</a></li>
+                    <li><a href="#">Conheça o Explorer</a></li>
+                </ul>
+            </section>
+
+            <section id="social-links">
+                <a href="https://github.com/ClarkQuente" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </section>
+
+            <footer>
+                Feito com &#10084; por <span>Hertz Rafael</span>
+            </footer>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
